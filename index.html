@@ -14,7 +14,6 @@
             color: #eaeaea;
         }
 
-        /* Header */
         header {
             background: linear-gradient(135deg, #0d47a1, #1a237e);
             color: #fff;
@@ -34,25 +33,24 @@
             margin: 15px 0 30px;
         }
 
-        .btn {
+        nav a {
             display: inline-block;
             background: #03a9f4;
             color: #fff;
-            padding: 15px 30px;
+            padding: 10px 20px;
             text-decoration: none;
             font-size: 1rem;
             font-weight: bold;
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin: 5px;
             transition: background 0.3s ease, transform 0.2s ease;
         }
 
-        .btn:hover {
+        nav a:hover {
             background: #0288d1;
             transform: translateY(-3px);
         }
 
-        /* Main Sections */
         section {
             padding: 40px 20px;
             margin: 0 auto;
@@ -68,15 +66,28 @@
         }
 
         section p {
-            font-size: 1rem;
+            font-size: 1.1rem;
             line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul, ol {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        ul li, ol li {
+            font-size: 1rem;
+            margin-bottom: 10px;
         }
 
         .features {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             flex-wrap: wrap;
             margin-top: 30px;
+            gap: 20px;
         }
 
         .feature {
@@ -84,57 +95,21 @@
             border: 2px solid #03a9f4;
             border-radius: 10px;
             padding: 20px;
-            margin: 10px;
-            max-width: 300px;
+            width: 300px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
         }
 
         .feature h3 {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+            color: #ffd700;
             margin-bottom: 10px;
-            color: #ffd700;
-        }
-
-        .feature p {
-            font-size: 0.9rem;
-        }
-
-        /* Links Section */
-        .links {
-            text-align: center;
-            margin: 30px auto;
-        }
-
-        .links a {
-            color: #03a9f4;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 1rem;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .links a:hover {
-            color: #ffd700;
-        }
-
-        /* Footer */
-        footer {
-            background: #1a1a2e;
-            padding: 20px 10px;
-            text-align: center;
-            font-size: 0.8rem;
-            color: #666;
-        }
-
-        footer a {
-            color: #03a9f4;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        footer a:hover {
-            color: #ffd700;
         }
     </style>
 </head>
@@ -143,24 +118,80 @@
 <header>
     <h1>DulacDat Games</h1>
     <p>Your go-to destination for buying, selling, and trading video games.</p>
-    <a href="#sell-form" class="btn">Sell Your Collection</a>
+    <nav>
+        <a href="#about-us">About Us</a>
+        <a href="#faq">FAQ</a>
+        <a href="#services">Our Services</a>
+        <a href="#sell-form">Sell Your Collection</a>
+    </nav>
 </header>
 
-<section>
-    <h2>What We Do</h2>
-    <p>At DulacDat Games, we make gaming easier for everyone. Whether you're looking to add to your collection or sell games, we have you covered.</p>
+<section id="about-us">
+    <h2>About Us</h2>
+    <p>Welcome to DulacDat Games – your go-to destination for buying, selling, and trading video games and consoles. We are passionate about bringing you the best deals and connecting with fellow gaming enthusiasts. Whether you're looking to add to your collection, offload some games, or trade up for that new system you've been eyeing, we make the process simple and hassle-free.</p>
+
+    <h3>What We Do</h3>
+    <p>At DulacDat Games, we offer a personalized experience for gamers and collectors. Our focus includes:</p>
+    <ul>
+        <li><strong>Buying Games & Consoles:</strong> Offering fair prices based on 50% of the current PriceCharting value.</li>
+        <li><strong>Selling:</strong> Using trusted platforms like eBay, Amazon, and direct sales to our community.</li>
+        <li><strong>Trading:</strong> Helping you trade towards a variety of items, from retro classics to new systems.</li>
+    </ul>
+    <p>Whether you're a seasoned collector or just starting your gaming journey, we're here to make buying, selling, and trading as easy and enjoyable as possible.</p>
+
+    <h3>Why Choose Us?</h3>
+    <ul>
+        <li><strong>Fair Pricing:</strong> We ensure competitive rates for your games and consoles based on market value.</li>
+        <li><strong>Customer-First:</strong> Enjoy simple selling and trading processes, with secure payments via PayPal Goods & Services.</li>
+        <li><strong>Community-Focused:</strong> Join our Discord to connect with other gamers, share your finds, and stay updated on the latest deals.</li>
+    </ul>
+
+    <h3>How It Works</h3>
+    <p>Selling or trading with us is easy:</p>
+    <ol>
+        <li><strong>Submit a Form:</strong> Provide details about the items you want to sell or trade, and we’ll send you an offer based on market values.</li>
+        <li><strong>Quick Payment:</strong> Once we agree on a deal, payments are processed securely through PayPal within 48 hours.</li>
+        <li><strong>Ship Items:</strong> Send your items to our address to complete the transaction.</li>
+    </ol>
+
+    <h3>Our Vision</h3>
+    <p>We strive to create a seamless and trustworthy marketplace for gamers, collectors, and hobbyists. With a focus on transparency, fairness, and community interaction, we aim to make your experience with DulacDat Games positive and memorable.</p>
+
+    <p>Thank you for choosing DulacDat Games—we look forward to helping you!</p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
     <div class="features">
         <div class="feature">
-            <h3>Buy Games</h3>
-            <p>We offer fair prices for your games and consoles, based on market values.</p>
+            <h3>Trade Games</h3>
+            <p>Trade your games for what you're looking for—let us help complete your collection!</p>
         </div>
         <div class="feature">
-            <h3>Sell with Ease</h3>
-            <p>Our platform ensures quick payouts and hassle-free transactions via PayPal.</p>
+            <h3>Sell Games</h3>
+            <p>Our <a href="https://docs.google.com/spreadsheets/d/1smeGyNE-pj3CD8WVfFhQwrg36aSV50BoigmKGgUGWT8/edit?usp=sharing" target="_blank">buylist</a> is designed for professional sellers. Items must be in 9/10 condition and are intended for business partners or experienced sellers.</p>
         </div>
         <div class="feature">
             <h3>Join Our Community</h3>
-            <p>Connect with like-minded gamers on our Discord for free!</p>
+            <p>Join our community of like-minded sellers! Our Discord is perfect for collectors or sellers looking to build or sell their collections and meet new people.</p>
+        </div>
+    </div>
+</section>
+
+<section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="features">
+        <div class="feature">
+            <h3>How do I sell my games?</h3>
+            <p>Fill out our form, and we’ll get back to you with an offer.</p>
+        </div>
+        <div class="feature">
+            <h3>How will I get paid?</h3>
+            <p>Payouts are processed through PayPal for your convenience.</p>
+        </div>
+        <div class="feature">
+            <h3>Do you accept international sellers?</h3>
+            <p>Yes, as long as the games are NTSC format!</p>
         </div>
     </div>
 </section>
@@ -171,17 +202,5 @@
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdc-wSGKI5csR1n07rSmvETWKLIwnnkhyoCEqyYtxB4wyH0rA/viewform?usp=sf_link" class="btn">Sell Now</a>
 </section>
 
-<section>
-    <h2>Our Buylist</h2>
-    <p>Check out our buylist to see the items we’re currently buying for Amazon.</p>
-    <a href="https://docs.google.com/spreadsheets/d/1smeGyNE-pj3CD8WVfFhQwrg36aSV50BoigmKGgUGWT8/edit?usp=sharing" target="_blank" class="btn">Sell Your Games</a>
-
-</section>
-
-<section>
-    <h2>Connect With Us</h2>
-    <div class="links">
-        <a href="https://linktr.ee/DulacDat" target="_blank">Join Our Socials</a>
-    </div>
-</section>
-
+</body>
+</html>
